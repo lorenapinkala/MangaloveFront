@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import { Box, CssBaseline } from "@mui/material";
 import { Route, Routes } from "react-router";
+import Home from './components/Home'
 
 function App() {
   return (
