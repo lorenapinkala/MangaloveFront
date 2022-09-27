@@ -1,8 +1,15 @@
 import React from 'react'
+import Box from "@mui/material/Box";
 
 const Header = () => {
   return (
-    <div>este es el header muaajajdlkfñdfak</div>
+    <Box
+          container
+          spacing={4}
+          sx={{ p: 8, ml: "250px", maxWidth: "85vw" ,backgroundColor:"red"}}
+        >
+          es el header
+        </Box>
   )
 }
 
