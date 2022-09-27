@@ -1,5 +1,5 @@
 import ListItem from '@mui/material/ListItem';
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import {
     ListItemButton,
     ListItemIcon,
@@ -13,7 +13,7 @@ const Genres = () => {
     <ListItem>
       <ListItemButton>
         <ListItemIcon>
-          <FavoriteBorderOutlinedIcon />
+          <MenuBookIcon />
         </ListItemIcon>
         <ListItemText primary="Genres" />
       </ListItemButton>
