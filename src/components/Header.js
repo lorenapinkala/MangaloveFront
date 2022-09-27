@@ -6,7 +6,7 @@ const Header = () => {
     <Box
           container
           spacing={4}
-          sx={{ p: 8, ml: "250px", maxWidth: "85vw" ,backgroundColor:"red"}}
+          sx={{ p: 8, ml: "250px", maxWidth: "85vw" ,backgroundColor:"#474747"}}
         >
           es el header
         </Box>

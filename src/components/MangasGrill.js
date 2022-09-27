@@ -11,7 +11,7 @@ const MangasGrill = () => {
       <Grid
           container
           spacing={4}
-          sx={{ p: 8, ml: "250px", maxWidth: "85vw",backgroundColor:"blue" }}
+          sx={{ p: 8, ml: "250px", maxWidth: "85vw",backgroundColor:"#1b004b"}}
         >
          {arr.map((card) => (
             <MangaCard/>

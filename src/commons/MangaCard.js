@@ -7,7 +7,8 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function MangaCard() {
   return (
-    <Card sx={{ maxWidth: 345, backgroundColor:"orange", margin:5}}>
+    <Card sx={{ maxWidth: 345, margin:5,boxShadow:
+      "0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)",}}>
       <CardActionArea>
         <CardMedia
           component="img"
