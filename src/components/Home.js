@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import Header from './Header';
@@ -9,7 +10,7 @@ const Home = () => {
       <Navbar />
       <Sidebar />
       <Header/>
-      <MangasGrill />
+  <MangasGrill/>
     </>
   )
 }
