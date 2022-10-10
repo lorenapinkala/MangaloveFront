@@ -9,6 +9,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { styled } from "@mui/material";
 import Searchbar from "./Searchbar";
+import { Link } from "react-router-dom";
 
 const StyledToolBar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -22,16 +23,16 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <StyledToolBar>
-
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            MangaLove
-          </Typography>
-
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ display: { xs: "none", sm: "block", color: "white" } }}
+            >
+              MangaLove
+            </Typography>
+          </Link>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton size="large" aria-label="" color="inherit"></IconButton>
@@ -53,7 +54,9 @@ const Navbar = () => {
               aria-haspopup="true"
               color="inherit"
             >
-              <AccountCircle />
+              <Link to="/login" style={{ textDecoration: "none", color: "white"}}>
+                <AccountCircle />
+              </Link>
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
