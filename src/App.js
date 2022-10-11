@@ -1,10 +1,10 @@
 import Home from "./components/Home";
 import { Box, CssBaseline } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
-import Login from "./components/Login";
 import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import Forgotpassword from "./components/Forgotpassword";
 
 function App() {
   return (
@@ -12,12 +12,13 @@ function App() {
       <CssBaseline />
       <Box>
       <Navbar />
-      <Sidebar />
       </Box>
 
       <Routes>
       <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<Signup/>} />
+        <Route path="/forgotpassword" element={<Forgotpassword/>} />
       </Routes>
     </>
   );
